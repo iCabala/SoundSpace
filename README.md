@@ -7,5 +7,4 @@ Practical for social events since the host can just upload his playlist and leav
 The webpage itself is available at: http://nodejs-soundspace.rhcloud.com/
 
 This project was a group effort by:
-
 [atheed](https://github.com/atheed/)
