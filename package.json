@@ -1,0 +1,14 @@
+{
+    "name": "project",
+    "description": "music player project",
+    "version": "0.0.1",
+    "dependencies": {
+        "express": "3.x",
+        "body-parser": "https://github.com/expressjs/body-parser",
+        "mongoose": "*",
+        "id3-reader": "https://github.com/aadsm/JavaScript-ID3-Reader",
+        "socket.io" : "*",
+        "express-session" : "*",
+        "socket.io-express-session" : "https://github.com/xpepermint/socket.io-express-session"
+    }
+}

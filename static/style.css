@@ -1,0 +1,372 @@
+/* Credit for some CSS styles goes to authors of:
+	http://codepen.io/benague/pen/bLBCd
+	http://www.csscheckbox.com/css-radio-button/29439/small-orange-on-gray-css-radio-button/
+	http://www.sanwebe.com/2014/08/css-html-forms-designs
+	http://codepen.io/Pixcils/pen/KfzFL
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+h1 {
+	font-size: 88px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	color: #FFF;
+	margin: 0;
+	padding: 25px 0 25px 0;
+	transform-origin: 50% 100%;
+	text-shadow: 2px 2px 2px #333;
+	text-align: center;
+	 
+	animation-duration: .3s;
+	animation-name: fadeAndScale;
+	animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+
+#Title {
+	font-size: 60px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	color: #FFF;
+	margin: 0;
+	padding: 25px 0 25px 0;
+	transform-origin: 50% 100%;
+	text-shadow: 2px 2px 2px #333;
+	text-align: center;
+	 
+	animation-duration: .3s;
+	animation-name: fadeAndScale;
+	animation-timing-function: cubic-bezier(.71,.55,.62,1.57);
+}
+
+.header {
+	width: 24%;
+	margin: 0px;
+	height: 6px;
+	border: 0;
+	box-shadow: inset 0 12px 12px -12px rgba(0, 55, 0, 0.3);
+}
+
+#playlist{
+	display:none;
+}
+
+#currently_playing {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#queue_playlist {
+	text-align: center;
+	margin: 0 auto;
+	width: 75%;
+}
+
+#add_suggest {
+	text-align: center;
+}
+
+.divHeading {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	color: #FFF;
+}
+
+body {
+	background-image: url("simple-background.jpg");
+}
+
+@keyframes fadeAndScale {
+	from {
+		opacity: 0;
+		transform: scale(.9, .9);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+
+form {
+	text-align: center;
+}
+
+table {
+	background: rgba(26, 26, 26, 0.4);
+	color: #d9d9d9;
+	min-width:100%; 
+	max-width:800px;
+	font-size: 15px;
+	text-align: left;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+	background-color: rgb(34, 68, 68);
+}
+
+#landing{
+    visibility: visible;
+	max-width: 500px;
+	min-height: 150px;
+	margin: 0 auto;
+	display: block;
+}
+
+#create{
+    display: none;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+#create > .input-field > input{
+    display:none;
+}
+
+#join{
+    display: none;
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+#radioDiv{
+	padding-top: 15px;
+	padding-left: 50px;
+	padding-bottom: 0px;
+}
+
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	background-color: transparent;
+	cursor: pointer;
+	margin: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 22px;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+}
+
+.btn:hover {
+	cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
+}
+
+.cButton {
+	color: #55acee;
+	border: 2px #55acee solid;
+}
+
+.cButton:hover {
+	background-color: #55acee;
+	color: #fff
+}
+
+.jButton {
+	color: #e67e22;
+	border: 2px #e67e22 solid;
+}
+
+.jButton:hover {
+	color: #fff;
+	background-color: #e67e22;
+}
+
+.backButton {
+	color: #e74c3c;
+	border: 2px #e74c3c solid;
+}
+
+.backButton:hover {
+	color: #fff;
+	background-color: #e74c3c;
+}
+
+.buttons {
+	padding-top: 30px;
+	text-align: center;
+}
+
+.input-field {
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background-color: transparent;
+}
+.input-field h1 {
+	background: #43D1AF;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+
+.label-danger {
+	display: table;
+	margin:0 auto;
+}
+
+#FileInput {
+	margin-left: 45%;
+	color: #fff;
+	font-size: 12px;
+}
+
+input[type=radio].css-checkbox {
+	position:absolute; 
+	z-index:-1000; 
+	left:-1000px; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0; 
+	border:0;
+}
+
+input[type=radio].css-checkbox + label.css-label {
+	padding-left:24px;
+	height:19px; 
+	display:inline-block;
+	line-height:19px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:19px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=radio].css-checkbox:checked + label.css-label {
+	background-position: 0 -19px;
+}
+label.css-label {
+	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_f5a0bac71f2d241ee9a9c97860a9eae4.png);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.input-field input[type="text"],
+.input-field input[type="date"],
+.input-field input[type="datetime"],
+.input-field input[type="email"],
+.input-field input[type="number"],
+.input-field input[type="search"],
+.input-field input[type="time"],
+.input-field input[type="url"],
+.input-field textarea,
+.input-field select {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: #555;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+
+.input-field input[type="text"]:focus,
+.input-field input[type="date"]:focus,
+.input-field input[type="datetime"]:focus,
+.input-field input[type="email"]:focus,
+.input-field input[type="number"]:focus,
+.input-field input[type="search"]:focus,
+.input-field input[type="time"]:focus,
+.input-field input[type="url"]:focus,
+.input-field textarea:focus,
+.input-field select:focus {
+	box-shadow: 0 0 5px #43D1AF;
+	padding: 3%;
+	border: 1px solid #43D1AF;
+}
+
+.input-field input[type="submit"],
+.input-field input[type="button"] {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #43D1AF;
+	border-bottom: 2px solid #30C29E;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;    
+	color: #fff;
+}
+.input-field input[type="submit"]:hover,
+.input-field input[type="button"]:hover {
+	background: #2EBC99;
+}
+
+.voteBtn {
+	border-style: solid;
+	border-width: 0px 0px 3px;
+	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+	color: #FFFFFF;	   
+	border-radius: 6px;
+	cursor: pointer;
+	display: inline-block;
+	font-style: normal;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+	text-overflow: ellipsis;
+	transition: all 200ms ease-in-out 0s;
+	white-space: nowrap;	
+	font-family: "Gotham Rounded A","Gotham Rounded B",Helvetica,Arial,sans-serif;
+	font-weight: 700;	
+	padding: 3px 10px 3px;
+	font-size: 14px;
+}
+
+.upvoteButton {
+	border-color: #3AC162;
+	background-color: #5FCF80;
+}
+.upvoteButton:hover, .upvoteButton:focus, .upvoteButton:active {
+	background-color: #4BC970;
+	border-color: #3AC162;    
+}
+
+.downvoteButton {
+	background-color: #ED5A5A;
+	border-color: #EA4343;
+}
+.downvoteButton:hover, .downvoteButton:focus, .downvoteButton:active {
+	background: none repeat scroll 0 0 #EB4848;
+	border-color: #E83131;
+}
+
+.undoUpvoteButton, .undoDownvoteButton {
+	 background-color: #C6CCD2;
+	 border-color: #AAB3BB;
+}
+.undoUpvoteButton:hover, .undoUpvoteButton:focus, .undoUpvoteButton:active, 
+.undoDownvoteButton:hover, .undoDownvoteButton:focus, .undoDownvoteButton:active{
+	background-color: #B8BFC7;
+	border-color: #AAB3BB; 
+}

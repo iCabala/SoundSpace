@@ -1,0 +1,25 @@
+{
+    "name": "newPlaylist",
+    "createdOn": "12.12.2012",
+    "createdBy": "user42",
+    "numberOfSongs": 0,
+    "totalDuration": 0,
+    "songs": [
+        {
+            "path" : "./nevergonna.mp3",
+            "name": "Never Gonna Give You Up",
+            "artist": "Rick Astley",
+            "duration": 183,
+            "genre" : "Dance-pop",
+            "year" : 1987
+        },
+        {
+            "path" : "./hotlinebling.mp3",
+            "name": "Hotline Bling",
+            "artist": "Drake",
+            "duration": 267,
+            "genre" : "R&B",
+            "year" : 2015
+        }
+    ]
+}
